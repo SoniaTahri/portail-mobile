@@ -1,0 +1,87 @@
+﻿body{
+	font-family:"Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif; 
+	font-size:10.5px;
+}
+a.button{
+	background:url(../images/button.gif);
+	display:block;
+	color:#050f5a;
+	font-weight:bold;
+	height:50px;
+	line-height:29px;
+	margin-bottom:14px;
+	text-decoration:none;
+	width:250px;
+    float:right;
+}
+a:hover.button{
+	color:#0066CC;
+}
+
+/* -------------------- */
+/* CLASSES				*/
+/* -------------------- */
+	.add{
+		background:url(../images/add.gif) no-repeat 10px 8px;
+		text-indent:30px;
+		display:block;
+
+}
+
+a.form-control{
+    width:191px;
+    float:right;
+	
+}
+btn btn-sm{
+	color:#555555;
+	font-weight:bold;
+	width:10px;
+    float:right;
+
+}
+#success_message{ display: none;}
+.form-control1 {
+
+height: 20px !important;
+
+width: 120px !important;
+
+font-size: 12px !important;
+
+}
+.form-control input-sm{
+
+height: 20px !important;
+
+width: 120px !important;
+
+font-size: 12px !important;
+
+}
+
+
+.well{
+    background-color: #ffffff;
+    color:#808080;
+}
+.control-label{
+height: 15px !important;
+
+width: 120px !important;
+
+font-size: 10px !important;
+
+}
+h4 {
+  color: #ffffff;
+  text-align:left;
+  font-family: cursive;
+  font-size: 10px;
+}
+.list-group-item{
+        background-color:#46c0e8;
+       color:#050f5a;
+
+}
+

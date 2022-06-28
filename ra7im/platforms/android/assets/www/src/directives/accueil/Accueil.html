@@ -1,0 +1,60 @@
+﻿
+
+
+    <h1>Encours</h1>
+ <div class="row">
+    <div class="col-sm-3 col-sm-6">
+        <a href data-toggle="modal" data-target="#modalImpayees" data-whatever="@mdo" class="a-btn colored red-bg">
+            <span class="a-btn-symbol"><span class="fa fa-dollar"></span></span>
+            <span class="a-btn-text">12</span>
+            <span class="a-btn-slide-text">Factures Impayées</span>
+        </a>
+    </div>
+    <div class="col-sm-3 col-sm-6">
+        <a href data-toggle="modal" data-target="#modalNotification" data-whatever="@mdo" class="a-btn colored green-bg">
+            <span class="a-btn-symbol"><span class="fa fa-bell"></span></span>
+            <span class="a-btn-text">03</span>
+            <span class="a-btn-slide-text">Notification non lues</span>
+        </a>
+</div>
+     <div class="col-sm-3 col-sm-6">
+         <a href data-toggle="modal" data-target="#modalReclamationEncours" data-whatever="@mdo" class="a-btn colored purple-bg">
+             <span class="a-btn-symbol"><span class="fa fa-check"></span></span>
+             <span class="a-btn-text">03</span>
+             <span class="a-btn-slide-text">Réclamations Encours</span>
+         </a>
+     </div>
+    <div class="col-sm-3 col-sm-6">
+        <a href data-toggle="modal" data-target="#modalReclamationRejetees" data-whatever="@mdo" class="a-btn emerald-bg">
+            <span class="a-btn-symbol"><span class="fa fa-times"></span></span>
+            <span class="a-btn-text">00</span>
+            <span class="a-btn-slide-text">Réclamations Rejetées</span>
+        </a>
+    </div>
+</div>
+    <br />
+    <listfactimpayees></listfactimpayees>
+    <listreclencours></listreclencours>
+    <listreclrejetees></listreclrejetees>
+    <listenotifications></listenotifications>
+
+    <h1>Les branchements</h1>
+    <table class="table table-striped">
+        <thead>
+            <tr class="border-radius border-color">
+                <th class="text-xs-center"> Reference </th>
+                <th class="text-xs-center"> Adresse </th>
+                <th class="text-xs-center">  </th>
+
+            </tr>
+        </thead>
+        <tbody ng-repeat='branchement in branchements'>
+            <tr>
+                <td class="text-xs-center">{{ branchement.reference }}</td>
+                <td class="text-xs-center">{{ branchement.adresse }}</td>
+                <td class="button" ng-click="details()"><span>Details</span></td>
+
+            </tr>
+
+    </table>
+

@@ -1,0 +1,26 @@
+﻿
+
+
+<!-- Container (Contact Section) -->
+<div class="container">
+    <h3 class="text-center">déposer une réclamation</h3>
+    <div class="row">
+        <div class="col-md-8">
+            <div class="row">
+                <div class="col-sm-6 form-group">
+                    <input class="form-control" id="name" name="name" placeholder="Name" type="text" required ng-model="Nom">
+                </div>
+                <div class="col-sm-6 form-group">
+                    <input class="form-control" id="email" name="email" placeholder="Email" type="email" required ng-model="email">
+                </div>
+            </div>
+            <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5" ng-model="reclamation"></textarea>
+            <br>
+            <div class="row">
+                <div class="col-md-12 form-group">
+                    <button id="enyoyer" name="envoyer" class="btn btn-success" ng-click="envoyer()">Envoyer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
